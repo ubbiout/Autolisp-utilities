@@ -1,3 +1,13 @@
+;;---------------------=={ Entity List }==--------------------;;
+;;                                                            ;;
+;;  Displays the DXF Information for an entity, a variation   ;;
+;;  of the program by Michael Puckett of the same name.       ;;
+;;------------------------------------------------------------;;
+;;  Author: Lee Mac - www.lee-mac.com                         ;;
+;;------------------------------------------------------------;;
+;;  Arguments: entity - entity (ename) / DXF list             ;;
+;;------------------------------------------------------------;;
+;; http://www.lee-mac.com/lisp/html/elist.html
 (defun elist ( entity / prin1x princx data xdata )
  
     (defun prin1x ( x i ) (repeat i (princ "  ")) (prin1 x))
