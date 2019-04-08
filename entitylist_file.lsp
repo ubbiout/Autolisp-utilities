@@ -1,9 +1,11 @@
+;;I don't think this works.... I should probaly just use (princ "stringstuffhere" filename)
+
 (defun ltos ( lst / str )
     (setq str (car (ltos lst)))
     (foreach itm (cdr lst) (setq str (strcat str (ltos itm))))
     str
 )
-
+;; still basically: http://www.lee-mac.com/lisp/html/elist.html
 (defun elist ( entity / pth fil string dimpath prin1x princx data xdata )
     
     (setq pth (strcat (getvar "logfilepath") "elist.txt")
