@@ -1,3 +1,9 @@
+;; Based off of:
+;; Dump Object  -  Lee Mac
+;; Lists the ActiveX properties & methods of a supplied VLA-Object
+;; or VLA-Object equivalent of a supplied ename, handle, or DXF data list
+;; obj - [vla/ent/lst/str] VLA-Object, Entity Name, DXF List, or Handle
+;; http://www.lee-mac.com/lisp/html/DumpObjectV1-2.html
 (defun c:dump  nil (LM:dump (car (entsel))))
 
 (defun c:dumpn ( / osm poi ss e)
